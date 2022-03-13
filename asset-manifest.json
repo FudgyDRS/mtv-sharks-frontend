@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.27a654b7.chunk.css",
-    "main.js": "/static/js/main.f06d9891.chunk.js",
-    "main.js.map": "/static/js/main.f06d9891.chunk.js.map",
+    "main.js": "/static/js/main.a852be6c.chunk.js",
+    "main.js.map": "/static/js/main.a852be6c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.922e84c2.js",
     "runtime-main.js.map": "/static/js/runtime-main.922e84c2.js.map",
-    "static/css/2.4465253b.chunk.css": "/static/css/2.4465253b.chunk.css",
-    "static/js/2.5d77aafa.chunk.js": "/static/js/2.5d77aafa.chunk.js",
-    "static/js/2.5d77aafa.chunk.js.map": "/static/js/2.5d77aafa.chunk.js.map",
+    "static/css/2.111e428f.chunk.css": "/static/css/2.111e428f.chunk.css",
+    "static/js/2.9a6edaac.chunk.js": "/static/js/2.9a6edaac.chunk.js",
+    "static/js/2.9a6edaac.chunk.js.map": "/static/js/2.9a6edaac.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.4465253b.chunk.css.map": "/static/css/2.4465253b.chunk.css.map",
+    "static/css/2.111e428f.chunk.css.map": "/static/css/2.111e428f.chunk.css.map",
     "static/css/main.27a654b7.chunk.css.map": "/static/css/main.27a654b7.chunk.css.map",
-    "static/js/2.5d77aafa.chunk.js.LICENSE.txt": "/static/js/2.5d77aafa.chunk.js.LICENSE.txt",
+    "static/js/2.9a6edaac.chunk.js.LICENSE.txt": "/static/js/2.9a6edaac.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.0e52900b.png",
     "static/media/10.png": "/static/media/10.ccd53454.png",
     "static/media/100.png": "/static/media/100.4a96b52e.png",
@@ -3348,16 +3348,16 @@
     "static/media/Spliffshark - Elias Campos-p-800.png": "/static/media/Spliffshark - Elias Campos-p-800.6dfdb081.png",
     "static/media/ZombieShark01 - dannydonkey-p-800.jpeg": "/static/media/ZombieShark01 - dannydonkey-p-800.0ff2ce9b.jpeg",
     "static/media/dao-info.jpeg": "/static/media/dao-info.443066f2.jpeg",
-    "static/media/index.css": "/static/media/inter-vietnamese-400-normal.fac160b0.woff2",
+    "static/media/index.css": "/static/media/inter-vietnamese-400-normal.a1bc9a8f.woff2",
     "static/media/logo.png": "/static/media/logo.cdbd5e1d.png",
     "static/media/App.scss": "/static/media/sea background 02.ac9d56ec.jpg",
     "static/media/shark-club.jpeg": "/static/media/shark-club.374e7c2e.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.922e84c2.js",
-    "static/css/2.4465253b.chunk.css",
-    "static/js/2.5d77aafa.chunk.js",
+    "static/css/2.111e428f.chunk.css",
+    "static/js/2.9a6edaac.chunk.js",
     "static/css/main.27a654b7.chunk.css",
-    "static/js/main.f06d9891.chunk.js"
+    "static/js/main.a852be6c.chunk.js"
   ]
 }
