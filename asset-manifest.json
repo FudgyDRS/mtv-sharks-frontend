@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.387c13b5.chunk.css",
-    "main.js": "/static/js/main.8627f44e.chunk.js",
-    "main.js.map": "/static/js/main.8627f44e.chunk.js.map",
+    "main.css": "/static/css/main.de4d982a.chunk.css",
+    "main.js": "/static/js/main.6c765480.chunk.js",
+    "main.js.map": "/static/js/main.6c765480.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.922e84c2.js",
     "runtime-main.js.map": "/static/js/runtime-main.922e84c2.js.map",
     "static/css/2.111e428f.chunk.css": "/static/css/2.111e428f.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.59df35e1.chunk.js.map": "/static/js/2.59df35e1.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.111e428f.chunk.css.map": "/static/css/2.111e428f.chunk.css.map",
-    "static/css/main.387c13b5.chunk.css.map": "/static/css/main.387c13b5.chunk.css.map",
+    "static/css/main.de4d982a.chunk.css.map": "/static/css/main.de4d982a.chunk.css.map",
     "static/js/2.59df35e1.chunk.js.LICENSE.txt": "/static/js/2.59df35e1.chunk.js.LICENSE.txt",
     "static/media/MTV_shark_bitchattack - Musyk fabryk-p-800.png": "/static/media/MTV_shark_bitchattack - Musyk fabryk-p-800.9aa74f83.png",
     "static/media/Spliffshark - Elias Campos-p-800.png": "/static/media/Spliffshark - Elias Campos-p-800.6dfdb081.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.922e84c2.js",
     "static/css/2.111e428f.chunk.css",
     "static/js/2.59df35e1.chunk.js",
-    "static/css/main.387c13b5.chunk.css",
-    "static/js/main.8627f44e.chunk.js"
+    "static/css/main.de4d982a.chunk.css",
+    "static/js/main.6c765480.chunk.js"
   ]
 }
