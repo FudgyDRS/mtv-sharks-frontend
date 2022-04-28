@@ -7,7 +7,7 @@ const Marketplace: FC = () => {
   
     return (
       <Box className="default-dark">
-        <BlockMarketplace />
+        {/* <BlockMarketplace /> */}
       </Box>
     );
   };

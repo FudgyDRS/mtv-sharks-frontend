@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import { SimpleGrid, Button } from '@chakra-ui/react';
 
-import { SharkObject } from "../../models/MTV Sharks/SharkObject";
+import { SharkObject as NFTObject } from "../../models/MTV Sharks/SharkObject";
 import { GenerateCard } from "./AccountModalCard";
 import "../../styles/modal.scss";
 
-const renderData = (data: SharkObject[]) => {
+const renderData = (data: NFTObject[]) => {
   return (
     <SimpleGrid columns={3} spacingY={28}>{data.map((todo: any, index: any) => {
-      return <li key={index} className="item" ><GenerateCard sharkObject = {data[index]} /></li>;
+      return <li key={index} className="item" ><GenerateCard nftObject = {data[index]} /></li>;
     })}</SimpleGrid>
   );
 };
 
-///@Dev - Only create a grid of paginated card objects given inputted data of type SharkObject[]
-interface Props { sharkObjects: SharkObject[]; }
-function PaginationComponent({ sharkObjects }: Props) {
-  const [data, setData] = useState<SharkObject[]>([]);
+///@Dev - Only create a grid of paginated card objects given inputted data of type NFTObject[]
+interface Props { nftObjects: NFTObject[]; }
+function PaginationComponent({ nftObjects }: Props) {
+  const [data, setData] = useState<NFTObject[]>([]);
   const [currentPage, setcurrentPage] = useState(1);
   const [itemsPerPage, setitemsPerPage] = useState(6);
   const pages = [];
@@ -30,7 +30,7 @@ function PaginationComponent({ sharkObjects }: Props) {
   const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(5);
   const [minPageNumberLimit, setminPageNumberLimit] = useState(0);
 
-  useEffect(() => { setData(sharkObjects); }, [currentItems]);
+  useEffect(() => { setData(nftObjects); }, [currentItems]);
   const handleClick = (event: any) => { setcurrentPage(Number(event.target.id)); };
 
   console.log("current data: ", data);

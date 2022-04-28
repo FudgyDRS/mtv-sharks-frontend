@@ -46,15 +46,6 @@ export default function AccountModal({ isOpen, onClose }: Props) {
     onClose();
   }
 
-  // function CreateArray() {
-  //   let textbody;
-  //   for(token: any of tokens) {
-  //     textbody = 
-  //   }
-  // }
-
-  //useEffect(() => {}, [balance, tokens])
-
   return (
     <Modal isOpen={isOpen} onClose={onClose} isCentered size="md">
       <ModalOverlay />

@@ -22,7 +22,7 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon, CopyIcon } from "@chakra-ui/icons";
 
-import { SharkObject } from "../models/MTV Sharks/SharkObject";
+import { SharkObject as NFTObject } from "../models/MTV Sharks/SharkObject";
 import { useEthers } from "../modules/usedapp2/hooks";
 import StatusCircle from "./StatusCircle";
 import { OwnerOf, } from "../abi/mtvSharks";
@@ -57,22 +57,22 @@ flex-direction: row;
 justify-content: space-between;
 `;
 
-type Props = { isOpen: any; onClose: any; sharkObject: SharkObject; };
-export default function NftModal({ isOpen, onClose, sharkObject }: Props) {
+type Props = { isOpen: any; onClose: any; nftObject: NFTObject; };
+export default function NftModal({ isOpen, onClose, nftObject }: Props) {
   console.log("modal did something");
   const [, setValue] = useState("");
 
   const { account} = useEthers();
   let ownerOf;
-  ownerOf = account ? OwnerOf(String(sharkObject!["custom_fields"].edition-1)) : undefined;
+  ownerOf = account ? OwnerOf(String(nftObject!["custom_fields"].edition-1)) : undefined;
   ownerOf = ownerOf ? ownerOf.slice(0, 6) + "..." + ownerOf.slice(ownerOf.length - 4, ownerOf.length) : "";
-  let fileExtension = sharkObject!["custom_fields"].edition == "3333" ? ".jpg" : ".png";
+  let fileExtension = nftObject!["custom_fields"].edition == "3333" ? ".jpg" : ".png";
   return (
     <ChakraProvider theme={theme}>
     <Modal isOpen={isOpen} onClose={onClose} isCentered size="md">
       <ModalOverlay />
       <ModalContent background="gray.900" border="1px" borderStyle="solid" borderColor="gray.700" borderRadius="3xl" >
-        <ModalHeader color="white" px={4} fontSize="lg" fontWeight="medium"> {sharkObject.name} </ModalHeader>
+        <ModalHeader color="white" px={4} fontSize="lg" fontWeight="medium"> {nftObject.name} </ModalHeader>
         <Header>
           <ModalHeader color="white" px={4} fontSize="lg" fontWeight="medium">Status: <StatusCircle input={4} /></ModalHeader>
         </Header>
@@ -84,7 +84,7 @@ export default function NftModal({ isOpen, onClose, sharkObject }: Props) {
         <ModalBody pt={0} px={4}>
           <Box borderRadius="2.2em" border="5px" borderStyle="solid" borderColor="gray.600" width={"400px"} 
           borderStartColor={"blue"} borderEndColor={"blue"} borderTopColor={"blue"} borderBottomColor={"blue"}>
-            <Image src={"https://fudgy.mypinata.cloud/ipfs/QmWHBp5ogVWWugkCpBqLT8MygNr9ZJCXJfQi4oYWMqRR3W/" + String(sharkObject!["custom_fields"].edition) + fileExtension} alt="MTV Sharks Club" 
+            <Image src={"https://fudgy.mypinata.cloud/ipfs/QmWHBp5ogVWWugkCpBqLT8MygNr9ZJCXJfQi4oYWMqRR3W/" + String(nftObject!["custom_fields"].edition) + fileExtension} alt="MTV Sharks Club" 
             borderRadius={"2em"} width={"400px"}/>
           </Box>
           </ModalBody>
@@ -103,7 +103,7 @@ export default function NftModal({ isOpen, onClose, sharkObject }: Props) {
             </Flex>
             <Text color="white" fontSize="xl" fontWeight="semibold" ml="2" lineHeight="1.1">Metadata:</Text>
             <Text color="white" fontSize="xl" fontWeight="semibold" ml="2" lineHeight="1.1">Coming soon!</Text>
-            {/* <MetadataBox index={sharkObject!["custom_fields"].edition-1}/> */}
+            {/* <MetadataBox index={nftObject!["custom_fields"].edition-1}/> */}
             </Box>
             
         </ModalBody>
